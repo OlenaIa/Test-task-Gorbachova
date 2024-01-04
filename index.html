@@ -20,89 +20,95 @@
   </head>
 
   <body>
-    <header class="header section">
+    <header class="header">
       <div class="header_title-block">
         <svg class="header_title-block_svg" width="37" height="37">
           <use href="./images/sprite.svg#icon-setting"></use>
         </svg>
         <div class="header_title-block_wrap-title">
-            <h1 class="header_title-block_wrap-title_title">Dashboard</h1>
-            <p class="header_title-block_wrap-title_sub-text">v.01</p>
+          <h1 class="header_title-block_wrap-title_title">Dashboard</h1>
+          <p class="header_title-block_wrap-title_sub-text">v.01</p>
         </div>
       </div>
-      
-      <nav class="header-nav">
-                <ul class="header-menu list">
-          <li class="menu-item">
-        <button>
-            <svg class="dashboard-svg" width="24" height="24">
-              <use href="./images/sprite.svg#icon-key-square"></use>
-            </svg>
-            <p>Dashboard</p>
-        </button>
-    </li>
-          <li class="menu-item">
-            <button>
-                <svg class="dashboard-svg" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-d-square"></use>
-                </svg>
-                <p>Product</p>
-                <svg class="chevron-svg" width="16" height="16">
-                  <use href="./images/sprite.svg#icon-chevron-right"></use>
-                </svg>
+
+      <div class="header_title-secondary-block">
+        <svg class="header_menu-svg" width="24" height="24">
+          <use href="./images/sprite.svg#icon-key-square"></use>
+        </svg>
+        <h2 class="header_title-secondary">Dashboard</h2>
+      </div>
+
+      <nav class="header_nav-block">
+        <ul class="header_menu">
+          <li class="header_menu-item">
+            <button class="header_menu-button">
+              <svg class="header_menu-svg" width="24" height="24">
+                <use href="./images/sprite.svg#icon-d-square"></use>
+              </svg>
+              <p class="header_menu-text">Product</p>
+              <svg class="header_menu-svg" width="16" height="16">
+                <use href="./images/sprite.svg#icon-chevron-right"></use>
+              </svg>
             </button>
           </li>
-          <li class="menu-item">
-            <button>
-                <svg class="dashboard-svg" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-user-square"></use>
-                </svg>
-                <p>Customers</p>
-                <svg class="chevron-svg" width="16" height="16">
-                  <use href="./images/sprite.svg#icon-chevron-right"></use>
-                </svg>
+          <li class="header_menu-item">
+            <button class="header_menu-button">
+              <svg class="header_menu-svg" width="24" height="24">
+                <use href="./images/sprite.svg#icon-user-square"></use>
+              </svg>
+              <p class="header_menu-text">Customers</p>
+              <svg class="header_menu-svg" width="16" height="16">
+                <use href="./images/sprite.svg#icon-chevron-right"></use>
+              </svg>
             </button>
           </li>
-          
-            <button>
-                <svg class="dashboard-svg" width="24" height="24">
-            <use href="./images/sprite.svg#icon-wallet-money"></use>
-          </svg>
-          <li class="menu-item">
-                <p>Income</p>
-                <svg class="chevron-svg" width="16" height="16">
-                  <use href="./images/sprite.svg#icon-chevron-right"></use>
-                </svg>
+          <li class="header_menu-item">
+            <button class="header_menu-button">
+              <svg class="header_menu-svg" width="24" height="24">
+                <use href="./images/sprite.svg#icon-wallet-money"></use>
+              </svg>
+
+              <p class="header_menu-text">Income</p>
+              <svg class="header_menu-svg" width="16" height="16">
+                <use href="./images/sprite.svg#icon-chevron-right"></use>
+              </svg>
             </button>
           </li>
-          <li class="menu-item">
-            <button>
-                <svg class="dashboard-svg" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-discount-shape"></use>
-                </svg>
-                <p>Promote</p>
-                <svg class="chevron-svg" width="16" height="16">
-                  <use href="./images/sprite.svg#icon-chevron-right"></use>
-                </svg>
+          <li class="header_menu-item">
+            <button class="header_menu-button">
+              <svg class="header_menu-svg" width="24" height="24">
+                <use href="./images/sprite.svg#icon-discount-shape"></use>
+              </svg>
+              <p class="header_menu-text">Promote</p>
+              <svg class="header_menu-svg" width="16" height="16">
+                <use href="./images/sprite.svg#icon-chevron-right"></use>
+              </svg>
             </button>
           </li>
-          <li class="menu-item">
-            <button>
-                <svg class="dashboard-svg" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-message-question"></use>
-                </svg>
-                <p>Help</p>
-                <svg class="chevron-svg" width="16" height="16">
-                  <use href="./images/sprite.svg#icon-chevron-right"></use>
-                </svg>
+          <li class="header_menu-item">
+            <button class="header_menu-button">
+              <svg class="header_menu-svg" width="24" height="24">
+                <use href="./images/sprite.svg#icon-message-question"></use>
+              </svg>
+              <p class="header_menu-text">Help</p>
+              <svg class="header_menu-svg" width="16" height="16">
+                <use href="./images/sprite.svg#icon-chevron-right"></use>
+              </svg>
             </button>
           </li>
         </ul>
       </nav>
-      <div>
-        <img src="./images/avatar.png" alt="User's avatar" />
-        <h3>Evano</h3>
-        <p>Project Manager</p>
+      <div class="header_user-block">
+        <img
+          src="./images/avatar.png"
+          width="42"
+          height="42"
+          alt="User's avatar"
+        />
+        <div>
+          <p class="header_user-name">Evano</p>
+          <p class="header_user-role">Project Manager</p>
+        </div>
       </div>
     </header>
     <main>
@@ -129,22 +135,22 @@
             <li>jane@microsoft.com</li>
             <li>United States</li>
             <li>
-              <button>Active</button>
+              <button class="header_menu-button">Active</button>
             </li>
           </ul>
         </div>
         <p>Showing data 1 to 8 of 256K entries</p>
         <ul>
           <li>
-            <button><p>&#60;</p></button>
+            <button class="header_menu-button"><p>&#60;</p></button>
           </li>
-          <li><button>1</button></li>
-          <li><button>2</button></li>
-          <li><button>3</button></li>
-          <li><button>4</button></li>
+          <li><button class="header_menu-button">1</button></li>
+          <li><button class="header_menu-button">2</button></li>
+          <li><button class="header_menu-button">3</button></li>
+          <li><button class="header_menu-button">4</button></li>
           <li>...</li>
-          <li><button>40</button></li>
-          <li><button>&gt;</button></li>
+          <li><button class="header_menu-button">40</button></li>
+          <li><button class="header_menu-button">&gt;</button></li>
         </ul>
       </section>
     </main>

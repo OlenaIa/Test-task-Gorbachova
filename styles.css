@@ -3,10 +3,16 @@
 
     --title-color: #000000;
     --title-sub-text-color: #838383;
+    
     --menu-text-color: #9197B3;
+    --hover-menu-text-color: #FFFFFF;
+    --hover-button-background-color: #5932EA;
+
+
     --sub-title-text-color: #16C098;
     --list-title-text-color: #B5B7C0;
-    --active-number-text-color: #FFFFFF;
+
+
     --inactive-number-text-color: #404B52;
     --pagination-button-background: #F5F5F5;
 
@@ -21,6 +27,7 @@
     --primary-background-color: #FAFBFF;
     --secondary-background-color: #FFFFFF;
     --input-background-color: #F9FBFF;
+
 
     --main-text-font: 'Poppins', sans-serif;;
     --cubic: 0.4, 0, 0.2, 1;
@@ -104,17 +111,15 @@ img {
     overflow: hidden;
 }
 
-
-.section {
-    width: 306px;
-    height: 100vh;
-    background-color: var(--secondary-background-color);
-}
-
 /* ---------- HEADER ------------- */
 
 .header {
+    display: flex;
+    flex-direction: column;
     padding: 37px 36px 78px 28px;
+    width: 306px;
+    height: 100vh;
+    background-color: var(--secondary-background-color);
 }
 
 .header_title-block {
@@ -147,6 +152,71 @@ img {
     letter-spacing: -0.1px;
 }
 
+.header_nav-block {
+    margin-bottom: auto;
+}
 
+.header_menu-item:not(:last-child),
+.header_title-secondary-block {
+    margin-bottom: 18px;
+}
 
+.header_menu-button,
+.header_title-secondary-block {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 46px;
+    padding: 11px 8px 11px 11px;
+    border: 0;
+    border-radius: 8px;
+    color: var(--menu-text-color);
+    background-color: var(--secondary-background-color);
+    transition: background-color var(--transition-duration) cubic-bezier(var(--cubic));
+}
+
+.header_menu-button:hover,
+.header_menu-button:focus {
+    color: var(--hover-menu-text-color);
+    background-color: var(--hover-button-background-color);
+}
+
+.header_menu-svg {
+    fill: none;
+    stroke: var(--menu-text-color);
+}
+
+.header_menu-button:hover > .header_menu-svg,
+.header_menu-button:focus > .header_menu-svg {
+    stroke: var(--hover-menu-text-color);
+}
+
+.header_menu-text,
+.header_title-secondary {
+    margin-left: 14px;
+    margin-right: auto;
+}
+
+.header_title-secondary {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header_user-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header_user-name {
+    color: var(--title-color);
+    letter-spacing: 0.14px;
+}
+
+.header_user-role {
+    color: var(--role-text-color);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.12px;
+}
 /* ---------- MAIN ------------- */
