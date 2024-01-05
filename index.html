@@ -22,12 +22,12 @@
   <body>
     <header class="header">
       <div class="header_title-block">
-        <svg class="header_title-block_svg" width="37" height="37">
+        <svg class="header_title-svg" width="37" height="37">
           <use href="./images/sprite.svg#icon-setting"></use>
         </svg>
-        <div class="header_title-block_wrap-title">
-          <h1 class="header_title-block_wrap-title_title">Dashboard</h1>
-          <p class="header_title-block_wrap-title_sub-text">v.01</p>
+        <div class="header_title-wrap">
+          <h1 class="header_title">Dashboard</h1>
+          <p class="header_title-sub-text">v.01</p>
         </div>
       </div>
 
@@ -111,46 +111,264 @@
         </div>
       </div>
     </header>
+
     <main>
-      <section>
-        <h2>Hello Evano 👋🏼,</h2>
+      <section class="hello-section">
+        <h2 class="hello-section_title">Hello Evano 👋🏼,</h2>
       </section>
-      <section class="section">
-        <h2>All Customers</h2>
-        <p>Active Members</p>
-        <input />
-        <div>
-          <ul>
-            <li>Customer Name</li>
-            <li>Company</li>
-            <li>Phone Number</li>
-            <li>Email</li>
-            <li>Country</li>
-            <li>Status</li>
+
+      <section class="customers-section">
+        <h2 class="customers-section_title">All Customers</h2>
+        <p class="customers-section_title-sub-text">Active Members</p>
+
+        <div class="customers-section_search-block">
+          <input
+            type="text"
+            name="search"
+            class="customers-section_search"
+            placeholder="Search"
+          />
+          <svg class="customers-section-svg" width="24" height="24">
+            <use href="./images/sprite.svg#icon-search"></use>
+          </svg>
+        </div>
+
+        <div class="customers-section_table">
+          <ul class="customers-section_table-titles">
+            <li class="customers-section_title-item table-first-column">
+              Customer Name
+            </li>
+            <li class="customers-section_title-item table-first-column">
+              Company
+            </li>
+            <li class="customers-section_title-item table-third-column">
+              Phone Number
+            </li>
+            <li class="customers-section_title-item table-forth-column">
+              Email
+            </li>
+            <li class="customers-section_title-item table-fifth-column">
+              Country
+            </li>
+            <li class="customers-section_title-item table-sixth-column">
+              Status
+            </li>
           </ul>
-          <ul>
-            <li>Jane Cooper</li>
-            <li>Microsoft</li>
-            <li>(225) 555-0118</li>
-            <li>jane@microsoft.com</li>
-            <li>United States</li>
-            <li>
-              <button class="header_menu-button">Active</button>
+          <ul class="customers-section_table-data">
+            <li
+              class="customers-section_data-item customers-section_table-item table-first-column"
+            >
+              Jane Cooper
+            </li>
+            <li class="customers-section_data-item table-second-column">
+              Microsoft
+            </li>
+            <li class="customers-section_data-item table-third-column">
+              (225) 555-0118
+            </li>
+            <li class="customers-section_data-item table-forth-column">
+              jane@microsoft.com
+            </li>
+            <li class="customers-section_data-item table-fifth-column">
+              United States
+            </li>
+            <li class="customers-section_data-item table-sixth-column">
+              <button class="customers-section_table-button active">
+                Active
+              </button>
+            </li>
+          </ul>
+          <ul class="customers-section_table-data">
+            <li
+              class="customers-section_data-item customers-section_table-item table-first-column"
+            >
+              Floyd Miles
+            </li>
+            <li class="customers-section_data-item table-second-column">
+              Yahoo
+            </li>
+            <li class="customers-section_data-item table-third-column">
+              (205) 555-0100
+            </li>
+            <li class="customers-section_data-item table-forth-column">
+              floyd@yahoo.com
+            </li>
+            <li class="customers-section_data-item table-fifth-column">
+              Kiribati
+            </li>
+            <li class="customers-section_data-item table-sixth-column">
+              <button class="customers-section_table-button">Inactive</button>
+            </li>
+          </ul>
+          <ul class="customers-section_table-data">
+            <li
+              class="customers-section_data-item customers-section_table-item table-first-column"
+            >
+              Ronald Richards
+            </li>
+            <li class="customers-section_data-item table-second-column">
+              Adobe
+            </li>
+            <li class="customers-section_data-item table-third-column">
+              (302) 555-0107
+            </li>
+            <li class="customers-section_data-item table-forth-column">
+              ronald@adobe.com
+            </li>
+            <li class="customers-section_data-item table-fifth-column">
+              Israel
+            </li>
+            <li class="customers-section_data-item table-sixth-column">
+              <button class="customers-section_table-button">Inactive</button>
+            </li>
+          </ul>
+          <ul class="customers-section_table-data">
+            <li
+              class="customers-section_data-item customers-section_table-item table-first-column"
+            >
+              Marvin McKinney
+            </li>
+            <li class="customers-section_data-item table-second-column">
+              Tesla
+            </li>
+            <li class="customers-section_data-item table-third-column">
+              (252) 555-0126
+            </li>
+            <li class="customers-section_data-item table-forth-column">
+              marvin@tesla.com
+            </li>
+            <li class="customers-section_data-item table-fifth-column">Iran</li>
+            <li class="customers-section_data-item table-sixth-column">
+              <button class="customers-section_table-button active">
+                Active
+              </button>
+            </li>
+          </ul>
+          <ul class="customers-section_table-data">
+            <li
+              class="customers-section_data-item customers-section_table-item table-first-column"
+            >
+              Jerome Bell
+            </li>
+            <li class="customers-section_data-item table-second-column">
+              Google
+            </li>
+            <li class="customers-section_data-item table-third-column">
+              (629) 555-0129
+            </li>
+            <li class="customers-section_data-item table-forth-column">
+              jerome@google.com
+            </li>
+            <li class="customers-section_data-item table-fifth-column">
+              Réunion
+            </li>
+            <li class="customers-section_data-item table-sixth-column">
+              <button class="customers-section_table-button active">
+                Active
+              </button>
+            </li>
+          </ul>
+          <ul class="customers-section_table-data">
+            <li
+              class="customers-section_data-item customers-section_table-item table-first-column"
+            >
+              Kathryn Murphy
+            </li>
+            <li class="customers-section_data-item table-second-column">
+              Microsoft
+            </li>
+            <li class="customers-section_data-item table-third-column">
+              (406) 555-0120
+            </li>
+            <li class="customers-section_data-item table-forth-column">
+              kathryn@microsoft.com
+            </li>
+            <li class="customers-section_data-item table-fifth-column">
+              Curaçao
+            </li>
+            <li class="customers-section_data-item table-sixth-column">
+              <button class="customers-section_table-button active">
+                Active
+              </button>
+            </li>
+          </ul>
+          <ul class="customers-section_table-data">
+            <li
+              class="customers-section_data-item customers-section_table-item table-first-column"
+            >
+              Jacob Jones
+            </li>
+            <li class="customers-section_data-item table-second-column">
+              Yahoo
+            </li>
+            <li class="customers-section_data-item table-third-column">
+              (208) 555-0112
+            </li>
+            <li class="customers-section_data-item table-forth-column">
+              jacob@yahoo.com
+            </li>
+            <li class="customers-section_data-item table-fifth-column">
+              Brazil
+            </li>
+            <li class="customers-section_data-item table-sixth-column">
+              <button class="customers-section_table-button active">
+                Active
+              </button>
+            </li>
+          </ul>
+          <ul class="customers-section_table-data">
+            <li
+              class="customers-section_data-item customers-section_table-item table-first-column"
+            >
+              Kristin Watson
+            </li>
+            <li class="customers-section_data-item table-second-column">
+              Facebook
+            </li>
+            <li class="customers-section_data-item table-third-column">
+              (704) 555-0127
+            </li>
+            <li class="customers-section_data-item table-forth-column">
+              kristin@facebook.com
+            </li>
+            <li class="customers-section_data-item table-fifth-column">
+              Åland Islands
+            </li>
+            <li class="customers-section_data-item table-sixth-column">
+              <button class="customers-section_table-button">Inactive</button>
             </li>
           </ul>
         </div>
-        <p>Showing data 1 to 8 of 256K entries</p>
-        <ul>
-          <li>
-            <button class="header_menu-button"><p>&#60;</p></button>
+
+        <p class="customers-section_table-sub-text">
+          Showing data 1 to 8 of 256K entries
+        </p>
+
+        <ul class="customers-section_pagination">
+          <li class="customers-section_pagination-item">
+            <button class="customers-section_pagination-button">
+              <p>&#60;</p>
+            </button>
           </li>
-          <li><button class="header_menu-button">1</button></li>
-          <li><button class="header_menu-button">2</button></li>
-          <li><button class="header_menu-button">3</button></li>
-          <li><button class="header_menu-button">4</button></li>
-          <li>...</li>
-          <li><button class="header_menu-button">40</button></li>
-          <li><button class="header_menu-button">&gt;</button></li>
+          <li class="customers-section_pagination-item">
+            <button class="customers-section_pagination-button">1</button>
+          </li>
+          <li class="customers-section_pagination-item">
+            <button class="customers-section_pagination-button">2</button>
+          </li>
+          <li class="customers-section_pagination-item">
+            <button class="customers-section_pagination-button">3</button>
+          </li>
+          <li class="customers-section_pagination-item">
+            <button class="customers-section_pagination-button">4</button>
+          </li>
+          <li class="customers-section_pagination-space">...</li>
+          <li class="customers-section_pagination-item">
+            <button class="customers-section_pagination-button">40</button>
+          </li>
+          <li class="customers-section_pagination-item">
+            <button class="customers-section_pagination-button">&gt;</button>
+          </li>
         </ul>
       </section>
     </main>
