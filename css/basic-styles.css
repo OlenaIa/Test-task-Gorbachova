@@ -1,0 +1,102 @@
+:root {
+    --primary-text-color: #292D32;
+
+    --title-color: #000000;
+    --title-header-sub-text-color: #838383;
+    --title-main-sub-text-color: #16C098;
+
+    --menu-text-color: #9197B3;
+    --hover-button-text-color: #FFFFFF;
+    --hover-button-background-color: #5932EA;
+
+    --role-text-color: #757575;
+
+    --input-placeholder-color: #B5B7C0;
+    --input-background-color: #F9FBFF;
+
+    --table-title-text-color: #B5B7C0;
+    --table-sub-text-color: #B5B7C0;
+    --table-border-color: #EEEEEE;
+    --active-button-text-color: #008767;
+    --inactive-button-text-color: #DF0404;
+    --active-background-button-color: rgba(22, 192, 152, 0.38);
+    --inactive-background-button-color: #FFC5C5;
+    --active-border-button-color: #00B087;
+    --inactive-border-button-color: #DF0404;
+
+    --pagination-inactive-text-color: #404B52;
+    --pagination-button-background: #F5F5F5;
+    --pagination-border-color: #EEEEEE;
+    --pagination-space-color: #000000;
+
+    --primary-background-color: #FAFBFF;
+    --secondary-background-color: #FFFFFF;
+
+    --main-text-font: 'Poppins', sans-serif;
+    ;
+    --cubic: 0.4, 0, 0.2, 1;
+    --transition-duration: 250ms;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+    font-family: var(--main-text-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.14px;
+}
+
+@media screen and (min-width: 375px) {
+    .body-container {
+        width: 375px;
+        gap: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .body-container {
+        flex-direction: row;
+        width: 768px;
+        height: 639px;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .body-container {
+        width: 1440px;
+        height: 1198px;
+        gap: 71px;
+    }
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}

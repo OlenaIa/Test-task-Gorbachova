@@ -19,10 +19,16 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
-  <body>
+  <body class="body-container">
     <header class="header">
+      <button type="button" class="header_mobile-menu-btn js-open-menu">
+        <svg width="24" height="24" class="header_mobile-menu-svg">
+          <use href="./images/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
+
       <div class="header_title-block">
-        <svg class="header_title-svg" width="37" height="37">
+        <svg class="header_title-svg">
           <use href="./images/sprite.svg#icon-setting"></use>
         </svg>
         <div class="header_title-wrap">
@@ -98,6 +104,7 @@
           </li>
         </ul>
       </nav>
+
       <div class="header_user-block">
         <img
           src="./images/avatar.png"
@@ -105,14 +112,91 @@
           height="42"
           alt="User's avatar"
         />
-        <div>
+        <div class="header_user-info-wrap">
           <p class="header_user-name">Evano</p>
           <p class="header_user-role">Project Manager</p>
         </div>
       </div>
+
+      <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu_container">
+          <div class="mobile-menu_title-wrap">
+            <div class="title-mobile-menu">
+              <svg class="title-mobile-menu-svg" width="30" height="30">
+                <use href="./images/sprite.svg#icon-key-square"></use>
+              </svg>
+              <h2>Dashboard</h2>
+            </div>
+            <button type="button" class="mobile-close-btn js-close-menu">
+              <svg class="modal-close-svg" width="10" height="10">
+                <use href="./images/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+          </div>
+
+          <ul class="header_menu">
+            <li class="header_menu-item">
+              <button class="header_menu-button">
+                <svg class="header_menu-svg" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-d-square"></use>
+                </svg>
+                <p class="header_menu-text">Product</p>
+                <svg class="header_menu-svg" width="16" height="16">
+                  <use href="./images/sprite.svg#icon-chevron-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="header_menu-item">
+              <button class="header_menu-button">
+                <svg class="header_menu-svg" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-user-square"></use>
+                </svg>
+                <p class="header_menu-text">Customers</p>
+                <svg class="header_menu-svg" width="16" height="16">
+                  <use href="./images/sprite.svg#icon-chevron-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="header_menu-item">
+              <button class="header_menu-button">
+                <svg class="header_menu-svg" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-wallet-money"></use>
+                </svg>
+
+                <p class="header_menu-text">Income</p>
+                <svg class="header_menu-svg" width="16" height="16">
+                  <use href="./images/sprite.svg#icon-chevron-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="header_menu-item">
+              <button class="header_menu-button">
+                <svg class="header_menu-svg" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-discount-shape"></use>
+                </svg>
+                <p class="header_menu-text">Promote</p>
+                <svg class="header_menu-svg" width="16" height="16">
+                  <use href="./images/sprite.svg#icon-chevron-right"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="header_menu-item">
+              <button class="header_menu-button">
+                <svg class="header_menu-svg" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-message-question"></use>
+                </svg>
+                <p class="header_menu-text">Help</p>
+                <svg class="header_menu-svg" width="16" height="16">
+                  <use href="./images/sprite.svg#icon-chevron-right"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
-    <main>
+    <main class="main">
       <section class="hello-section">
         <h2 class="hello-section_title">Hello Evano 👋🏼,</h2>
       </section>
@@ -372,5 +456,6 @@
         </ul>
       </section>
     </main>
+    <script src="./modal-menu.js"></script>
   </body>
 </html>
