@@ -33,7 +33,7 @@
     --secondary-background-color: #FFFFFF;
 
     --main-text-font: 'Poppins', sans-serif;
-    ;
+    
     --cubic: 0.4, 0, 0.2, 1;
     --transition-duration: 250ms;
 }
@@ -44,7 +44,7 @@
     color: var(--primary-text-color);
     background-color: var(--primary-background-color);
     font-family: var(--main-text-font);
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -57,6 +57,7 @@
         gap: 20px;
         margin-left: auto;
         margin-right: auto;
+        font-size: 14px;
     }
 }
 

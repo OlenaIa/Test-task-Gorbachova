@@ -10,7 +10,6 @@
     visibility: hidden;
     pointer-events: none;
     transform: translateX(-375px);
-
     transition: transform var(--transition-duration), opacity var(--transition-duration) cubic-bezier(var(--cubic));
 }
 
@@ -25,7 +24,6 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
-    /* margin-left: auto; */
     margin-right: auto;
     padding: 12px 24px 40px 24px;
     width: 268px;
