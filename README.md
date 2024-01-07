@@ -1,5 +1,8 @@
 # Test-task-Gorbachova
 
+Layout
+https://www.figma.com/file/3jPRRdGbHJbOT9P61KxT2y/CRM-Dashboard-Customers?node-id=501%3A4&mode=dev
+
 Layout of the Customers page Adaptive layout on the principle of "mobile first"
 for:
 
